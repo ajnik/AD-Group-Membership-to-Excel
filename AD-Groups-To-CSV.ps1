@@ -78,5 +78,5 @@ $htUsers.GetEnumerator() +  $htUsers.GetEnumerator()|
 ForEach-Object{
       [PSCustomObject]$($_.Value)
 } |
-Out-GridView -PassThru | Export-Csv -Path C:\temp\export.csv
+Out-GridView -PassThru | Export-Csv -Path C:\temp\export.csv -Notypeinformation
 #endregion
